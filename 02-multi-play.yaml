@@ -1,7 +1,7 @@
 - name: play-01
   hosts: web
-  tasks:
+  tasks: #list of tasks
   - name: PLAY-01 TASK-01
     ansible.builtin.debug:
       msg: "This from PLAY-01 and TASK-01"
-      
+
