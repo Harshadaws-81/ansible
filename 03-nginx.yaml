@@ -11,4 +11,9 @@
     ansible.builtin.service:
       name: nginx
       state: started
-      enabled: yes 
+      enabled: yes  
+
+  - name: remove nginx
+    ansible.builtin.package:
+      name: nginx
+      state: absent
