@@ -1,0 +1,17 @@
+- name: Playlevel and Tasklevel Variables to print
+  hosts: web
+  vars: # playlevl , all tasks in this play have access to this
+    COURSE: "DevOps with AWS"
+    DURATION: "120HRS"
+    TRAINEER: "SIVAKUMAR REDDY"
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+      msg: "Hi.. I'm learning {{COURSE}}, Duration is: {{DURATION}} and my Trainer is: {{TRAINER}}"
+
+  - name: print the information again(tasklevel)
+    vars:
+      COURSE: "Ansible"
+    ansible.builtin.debug:
+      msg:  "Hi.. I'm learning {{COURSE}}, Duration is: {{DURATION}} and my Trainer is: {{TRAINER}}"
+
