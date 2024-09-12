@@ -2,9 +2,10 @@
   hosts: web
   vars:
     COURSE: "DevOps with AWS"
-    DURATION: "140 HRS"
-    TRAINER: "SivaKumar Reddy"
-  tasks: 
-  - name: print the information
+    DURATION: "120 HRS"
+    TRAINER: "SIVAKUMAR REDDY"
+  tasks:
+  - name: Print the information
     ansible.builtin.debug:
-      msg: "Hi..! I'm learning {{COURSE}} , Duration is: {{DURATION}} , and my Trainer is: {{TRAINER}}"
+      msg: "Hi...! I'm learning {{COURSE}} , Duration is: {{DURATION}} and my Trainer is: {{TRAINER}}"
+      
