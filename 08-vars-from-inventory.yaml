@@ -3,5 +3,6 @@
   tasks:
   - name: print the ongoing course information
     ansible.builtin.debug:
-      msg: "Hi... I'm learning {{COURSE}} , Duration is: {{DURATION}} and my Trainer is:{{TRAINER}}
-      "
+      msg: "Hi... I'm learning {{COURSE}} , Duration is: {{DURATION}} and my Trainer is:{{TRAINER}}"
+
+      
