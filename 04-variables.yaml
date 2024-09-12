@@ -1,6 +1,6 @@
 - name: variables to print
   hosts: web
-  tasks:
+  tasks: # list of tasks to perform
   - name: print the information
     ansible.builtin.debug:
       msg: "Hi.. I am learning DevOps with AWS and my Trainer: SivaKumar Reddy"
