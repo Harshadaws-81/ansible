@@ -3,7 +3,7 @@
   vars:
     COURSE: "DevOps with AWS" #STRING
     DURATION: 120 #NUMBER
-    TRAINER: "SIVA KUAMER REDDY"
+    TRAINER: "SIVA KUMAR REDDY"
     TOPICS:
     - Linux
     - Shell
@@ -20,4 +20,4 @@
   tasks:
   - name: print the course information
     ansible.builtin.debug:
-     msg: "Hi.. I'm learning {{ COURSE }}, with Duration: {{ DURATION }}, and my Trainer is: {{ TRAINER }}, Topics are: {{ TOPICS }}, and the Classes are live: {{ LIVE }}, Tools are: {{ TOOLS }}"
+     msg: "Hi.. I'm learning {{ COURSE }}, with Duration: {{ DURATION }} HRS, and my Trainer is {{ TRAINER }}, Topics are: {{ TOPICS }}, and the Classes are live: {{ LIVE }}, Tools are: {{ TOOLS }}"
