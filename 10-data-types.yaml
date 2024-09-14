@@ -1,0 +1,23 @@
+- name: DevOps course information
+  hosts: web
+  vars:
+    COURSE: "DevOps with AWS" #STRING
+    DURATION: 120 #NUMBER
+    TRAINER: "SIVA KUAMER REDDY"
+    TOPICS:
+    - Linux
+    - Shell
+    - Ansible
+    - Terraform
+    - AWS
+    - K8
+    LIVE: True #BOOLEAN
+    TOOLS: #map/dictionary
+      ci: jenkins
+      cm: ansible
+      cloud: aws
+
+  tasks:
+  - name: print the course information
+    ansible.builtin.debug:
+     msg: "Hi.. I'm learning {{ COURSE }}, with Duration: {{ DURATION }}, and my Trainer is: {{ TRAINER }}, Topics are: {{ TOPICS }}, and the Classes are live: {{ LIVE }}, Tools are: {{ TOOLS }}"
