@@ -16,6 +16,9 @@
       ci: jenkins
       cm: ansible
       cloud: aws
+      aws:
+      - IAM
+      - S3
 
   tasks:
   - name: print the course information
