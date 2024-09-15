@@ -29,4 +29,14 @@
       numbers: [ 88,8,6,2,34,45,1,0,2,3,78,99,143,9999 ]
     ansible.builtin.debug:
       msg: " Min: {{ numbers | min }} , Max: {{ numbers | max }}"
+
+  - name: convert map to list
+    vars:
+      course:
+        name: "DevOps with AWS"
+        duration: 120
+        trainer: "SIVAKUMAR"
+    ansible.builtin.debug:
+      msg: "{{ course | dict2items }}"
       
+
