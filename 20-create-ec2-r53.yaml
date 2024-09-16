@@ -2,20 +2,23 @@
   hosts: web
   become: yes
   vars:
-    subnet_id: subnet-003aa0c858f31d196
-    sg_id: sg-048c74456592b8877
-    ami_id: ami-09c813fb71547fc4f
+    subnet_id: "subnet-003aa0c858f31d196"
+    sg_id: "sg-048c74456592b8877"
+    ami_id: "ami-09c813fb71547fc4f"
     instances:
     - mysql
     - backend
     - frontend
   tasks:
   - name: create ec2 instance
-    amazon.aws.ec2_instance:
-      name: "{{ item }}"
-      vpc_subnet_id: "{{ subnet_id }}"
+    amazon.aws.ec2_instance: # module
+      name: "{{item}}"
+      vpc_subnet_id: "{{subnet_id}}"
       instance_type: "t3.micro"
-      security_group: "{{ sg_id }}"
-      image_id: "{{ ami_id }}"
-    loop: "{{ instances }}"
+      security_group: "{{sg_id}}"
+      image_id: "{{ami_id}}"
+    loop: "{{instances}}"
     register: ec2_instances
+
+
+   
