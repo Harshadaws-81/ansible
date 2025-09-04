@@ -3,7 +3,7 @@
   become: yes  # takes sudo access
   tasks:
   - name: install nginx
-    ansible.builtin.package: # heterogenous module that can work for all distributions
+    ansible.builtin.package: # heterogenous module that can work for all distributions (dnf works for redhat)
       name: nginx
       state: present
 
