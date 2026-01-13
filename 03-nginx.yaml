@@ -1,14 +1,20 @@
-- name: nginx install and run
+- name: nginx installation and running 
   hosts: web
-  become: yes  # takes sudo access
-  tasks:
+  become: yes
+  tasks: 
   - name: install nginx
-    ansible.builtin.package: # heterogenous module that can work for all distributions (dnf works for redhat)
-      name: nginx
+    ansible.builtin.package:  # Heterogenous module that can work for all distributions
+      name: nginx 
       state: present
 
-  - name: run nginx
+  - name: running nginx 
     ansible.builtin.service:
-      name: nginx
+      name: nginx 
       state: started
       enabled: yes
+
+# Heterogenous means that it can work for multiple distributions like RHEL, Ubuntu, Debian etc.
+
+
+# for execution -  ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=devops123 03-nginx.yaml
+  
