@@ -6,4 +6,6 @@
   - name: print the course information
     ansible.builtin.debug:
       msg: "Hi.. I'm learning {{COURSE}}, Duration is: {{DURATION}} and my Trainer is: {{TRAINER}}"
+
+# here in this a separate file is created with name vars.yaml and the variables are defined in that file.      
       
