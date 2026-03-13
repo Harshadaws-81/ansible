@@ -5,4 +5,7 @@
   - name: print the facts
     ansible.builtin.debug:
       msg: "{{ ansible_facts }}"
-      
+
+# Ansible before conntecting to the server / hosts,it will collect the entire information, so that it can take decisions based on that information. 
+
+# Because of this ANsible is called as Heterogeneous.
