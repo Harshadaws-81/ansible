@@ -14,3 +14,5 @@
   - name: please print the course information
     ansible.builtin.debug:
       msg: "Hi.. I'm learning {{COURSE}}, Duration is:{{DURATION}} and my Trainer is:{{TRAINER}}"
+
+# In this playbook we are using vars_prompt to get the input from the user at the time of execution. 
