@@ -5,4 +5,6 @@
     ansible.builtin.debug:
       msg: "Hi... I'm learning {{COURSE}} , Duration is: {{DURATION}} and my Trainer is:{{TRAINER}}"
 
+# In this playbook we are using the variables from inventory file. we have defined the variables in inventory file and we are using those variables in this playbook.      
+
       
