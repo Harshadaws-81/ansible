@@ -15,3 +15,5 @@
     ansible.builtin.command: ps -ef | grep ssh
     register: output
 
+# Command module is more secure than shell module.
+# Because 'command' will not go into server , it will execute from outside.
