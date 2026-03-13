@@ -48,4 +48,6 @@
     ansible.builtin.debug:
       msg: "{{ course | items2dict }}"  
 
+# here 'Filters' means 'Functions' in ansible. 
+# by using (piping)" | " , the input of one function can be given to another function.
 
