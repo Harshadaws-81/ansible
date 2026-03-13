@@ -10,4 +10,6 @@
     - { name: 'mysql' , state: 'present'}
     - { name: 'postfix' , state: 'absent'}
     - { name: 'nginx' , state: 'present'}
+
+# this is an advanced way of using loops.     
     
