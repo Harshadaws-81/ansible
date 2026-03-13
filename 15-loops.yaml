@@ -13,4 +13,5 @@
     - Digvijay
     - Annanya Mokksha
     - Spike
-    
+
+# loops are very simplified in ansible. we use "item" as a keyword to access the loop variable. 
