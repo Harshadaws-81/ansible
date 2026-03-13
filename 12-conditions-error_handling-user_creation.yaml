@@ -14,4 +14,5 @@
   - name: create user
     ansible.builtin.command: useradd expense
     when: USER.rc !=0  # rc---> Return Code
-     
+
+# if the exit status is $?=0 . Dont create the user , otherwise create the user.      
