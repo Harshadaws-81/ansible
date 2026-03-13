@@ -5,7 +5,7 @@
   #   prompt: please enter the number
   #   private: false # not confidential
   vars:
-   my_number: 145
+   my_number: 1486
    
   tasks:
   - name: print this if less than 10
@@ -17,3 +17,5 @@
     ansible.builtin.debug:
       msg: "Given number {{my_number }} is greater than 10"
     when: my_number | int >= 10
+
+# CONDITIONS - ansible is using keyword 'WHEN' for conditions.
