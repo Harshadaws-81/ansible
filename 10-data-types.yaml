@@ -24,3 +24,5 @@
   - name: print the course information
     ansible.builtin.debug:
      msg: "Hi.. I'm learning {{ COURSE }}, with Duration: {{ DURATION }} HRS, and my Trainer is {{ TRAINER }}, Topics are: {{ TOPICS }}, and the Classes are live: {{ LIVE }}, Tools are: {{ TOOLS }}"
+
+# data types
