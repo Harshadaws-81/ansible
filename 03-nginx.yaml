@@ -15,6 +15,5 @@
 
 # Heterogenous means that it can work for multiple distributions like RHEL, Ubuntu, Debian etc.
 
-
-# for execution -  ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=devops123 03-nginx.yaml
+# for execution -ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=devops123 03-nginx.yaml
   
