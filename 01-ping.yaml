@@ -3,3 +3,5 @@
   tasks: # list of tasks
   - name: ping the server
     ansible.builtin.ping:
+
+    # playbook to check the connectivity between ansible server and the remote server.
