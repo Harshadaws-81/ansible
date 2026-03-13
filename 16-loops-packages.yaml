@@ -12,4 +12,5 @@
     - nginx
     - debian
     - httpd
+    - python3
       
