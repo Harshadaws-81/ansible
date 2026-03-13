@@ -4,4 +4,7 @@
   - name: print the information using arguments
     ansible.builtin.debug:
       msg: "Hello {{NAME}} , I {{GREETING}}"
+
+# In this playbook we are using the variables from arguments.
+# we will pass the variables at the time of execution using -e option. for example: ansible-playbook 09-vars-from-args.yaml -e NAME=Ansible -e GREETING='am learning Ansible'
       
